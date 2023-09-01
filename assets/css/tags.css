@@ -1,0 +1,26 @@
+.tag {
+    @apply inline-flex text-center justify-center px-6 py-3 rounded-full;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+
+    color: #FFFFFF;
+}
+
+.tag-green {
+    background: #47CA54;
+}
+
+.tag-blue {
+    background-color: #0091f1;
+}
+
+.tag-orange {
+    background-color: #ffe679;
+    color: black;
+}
+
+.tag-dark {
+    background-color: #131619;
+}

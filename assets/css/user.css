@@ -1,0 +1,126 @@
+.navbar-pfp {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    @apply mr-3;
+}
+.user-logout {
+    font-weight: 600;
+    color: rgb(206, 84, 84);
+    @apply ml-3;
+}
+
+.user-logout:hover {
+    color:rgb(163, 63, 63);
+}
+
+.user-dropdown-wrapper {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    margin-top: 250px;
+    @apply justify-center;
+    opacity: 0;
+    transition: all .2s;
+    transform: translateY(10px);
+}
+
+.user-dropdown {
+    @apply py-3 px-3;
+    text-align: left;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+}
+
+.user-dropdown > a {
+    @apply block;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 0;
+    transition: all .1s;
+    @apply py-3 px-6 my-1;
+    border-radius: 10px;
+}
+
+.user-dropdown > a:hover {
+    background-color: #0068fb;
+}
+
+.logout-hover:hover {
+    background-color: rgb(223, 35, 35) !important;
+}
+
+.login-card:hover > .user-dropdown-wrapper {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.reply-right {
+    @apply sm:flex justify-end my-4;
+}
+
+.reply-right > .reply-message {
+    background-color: #1d2125;
+}
+
+.reply-left {
+    @apply sm:flex my-4;
+}
+
+.reply-user {
+    @apply block;
+    color: gray;
+    font-size: 14px;
+}
+
+.replies {
+    @apply mb-8;
+}
+
+.reply-message {
+    background-color: #292e33;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    @apply px-4 py-4;
+}
+
+.reply-box {
+    font-size: 18px !important;
+}
+
+.reply-box > textarea {
+    width: 100%;
+    background-color: #131619;
+    @apply px-4 py-4 my-4;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.reply-box > textarea:focus {
+    border: 1px solid #292e33;
+    outline: none;
+}
+
+.reply-button-misc {
+    @apply flex items-center justify-center px-3 py-2;
+    border-radius: 10px;
+    border: 1px solid;
+    color: white;
+    border-color: #292e33;
+    transition: all .3s;
+}
+
+.reply-button-misc:hover {
+    background-color: #292e33;
+    border: 1px solid;
+    border-color: #292e33;
+}
+
+.reply-box > hr {
+    border-color: #292e33;
+}

@@ -1,0 +1,107 @@
+.login-input {
+    background-color: #0c0f11;
+    color: white;
+    font-size: 20px;
+    @apply block mt-3 px-6 py-3 rounded-full;
+  }
+.incorrect-label {
+    @apply text-red-500 mt-2;
+}
+.correct-label {
+    @apply text-green-500 mt-2;
+}
+.login-input:focus {
+    outline: 2px solid #0078fb;
+    border: none;
+}
+.incorrect {
+    outline: 2px solid rgb(214, 34, 34);
+}
+.separator {
+    height: 400px;
+    width: 2px;
+    border-radius: 100px;
+    @apply mr-12 bg-gray-700;
+}
+
+.login-description {
+    max-width: 400px;
+}
+.full-size {
+    height: 100vh;
+}
+.login-title {
+    @apply mb-2;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+
+    color: #FFFFFF;
+}
+
+/* Checkboxes */
+ /* Customize the label (the container) */
+ .checkmark-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all .3s;
+  }
+
+  /* Hide the browser's default checkbox */
+  .checkmark-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #0c0f11;
+    border-radius: 100px;
+    transition: all .1s;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .checkmark-container input:checked ~ .checkmark {
+    background-color: #0068fb;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .checkmark-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .checkmark-container .checkmark:after {
+    left: 10px;
+    top: 7px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
